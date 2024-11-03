@@ -1,39 +1,27 @@
 # hot-bubbles
 
-This template should help get you started developing with Vue 3 in Vite.
+ニュースアプリ
 
-## Recommended IDE Setup
+### 公開したアプリの URL
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 開発環境
 
-## Type Support for `.vue` Imports in TS
+### CI/CD
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+GitHub actions
 
-## Customize configuration
+### 開発言語
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+TypeScript
 
-## Project Setup
+### フレームワーク
 
-```sh
-npm install
-```
+Vue3
 
-### Compile and Hot-Reload for Development
+## アプリケーション機能
 
-```sh
-npm run dev
-```
+### 使用している API,SDK,ライブラリなど
 
-### Type-Check, Compile and Minify for Production
+[NewsAPI](https://newsapi.org/)
 
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+### 使用方法
