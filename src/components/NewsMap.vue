@@ -18,7 +18,6 @@ const fetchNews = async () => {
 
 onMounted(() => {
   fetchNews()
-  console.log(import.meta.env.MODE)
 })
 </script>
 
@@ -34,3 +33,14 @@ onMounted(() => {
     </div>
   </div>
 </template>
+
+<style scoped>
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-top: 1rem;
+}
+</style>
