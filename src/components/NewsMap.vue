@@ -23,7 +23,6 @@ onMounted(() => {
 
 <template>
   <div>
-    <h1>NewsMap</h1>
     <div v-if="news">
       <ul>
         <li v-for="result in news.results" :key="result.title">
