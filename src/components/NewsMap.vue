@@ -8,7 +8,7 @@ const newsApiKey = import.meta.env.VITE_NEWS_API_KEY
 const fetchNews = async () => {
   try {
     const res = await axios.get(
-      'https://newsapi.org/v2/top-headlines?country=us&apiKey=' + newsApiKey,
+      'https://newsdata.io/api/1/latest?apikey=' + newsApiKey + '&language=jp',
     )
     news.value = res.data
   } catch (error) {
@@ -26,8 +26,8 @@ onMounted(() => {
     <h1>NewsMap</h1>
     <div v-if="news">
       <ul>
-        <li v-for="article in news.articles" :key="article.title">
-          <h2>{{ article.title }}</h2>
+        <li v-for="result in news.results" :key="result.title">
+          <a v-bind:href="result.source_url">{{ result.title }}</a>
         </li>
       </ul>
     </div>
