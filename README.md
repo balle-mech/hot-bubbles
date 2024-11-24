@@ -1,4 +1,5 @@
 # hot-bubbles
+
 ニュースアプリ
 
 ### 公開したアプリの URL
@@ -14,6 +15,7 @@ GitHub actions
 TypeScript
 
 ### フレームワーク
+
 Vue3
 
 ## アプリケーション機能
