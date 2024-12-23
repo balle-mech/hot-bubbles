@@ -87,6 +87,4 @@ onMounted(() => {
   height: 100%;
   align-content: center;
 }
-
-
 </style>
