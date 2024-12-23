@@ -23,8 +23,8 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="news-container">
-    <div v-if="news">
+  <div class="news-container flex">
+    <div v-if="news" class="flex">
       <div class="news-column large">
         <NewsItem
           v-for="(result, index) in news.results.slice(0, 1)"
@@ -54,21 +54,14 @@ onMounted(() => {
 </template>
 
 <style scoped>
-.news-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-}
-
 .news-column {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  flex: 1;
 }
 
 .news-column.large {
-  flex: 1;
+  flex: 2;
 }
 
 .news-column.medium {
@@ -78,4 +71,22 @@ onMounted(() => {
 .news-column.small {
   flex: 1;
 }
+
+.news-item.large {
+  width: 95%;
+  height: 100%;
+  align-content: center;
+}
+.news-item.medium {
+  width: 95%;
+  height: 100%;
+  align-content: center;
+}
+.news-item.small {
+  width: 95%;
+  height: 100%;
+  align-content: center;
+}
+
+
 </style>
