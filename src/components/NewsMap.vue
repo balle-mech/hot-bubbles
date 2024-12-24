@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { ref, onMounted } from 'vue'
 import axios from 'axios'
-import NewsItem from './NewsCard.vue'
+import NewsItem from './NewsItem.vue'
 
 const news = ref(null)
 const newsApiKey = import.meta.env.VITE_NEWS_API_KEY
@@ -23,8 +23,8 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="news-container">
-    <div v-if="news">
+  <div class="news-container flex">
+    <div v-if="news" class="flex">
       <div class="news-column large">
         <NewsItem
           v-for="(result, index) in news.results.slice(0, 1)"
@@ -54,21 +54,14 @@ onMounted(() => {
 </template>
 
 <style scoped>
-.news-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-}
-
 .news-column {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  flex: 1;
 }
 
 .news-column.large {
-  flex: 1;
+  flex: 2;
 }
 
 .news-column.medium {
@@ -78,4 +71,5 @@ onMounted(() => {
 .news-column.small {
   flex: 1;
 }
+
 </style>
