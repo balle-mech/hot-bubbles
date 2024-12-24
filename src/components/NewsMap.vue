@@ -72,19 +72,4 @@ onMounted(() => {
   flex: 1;
 }
 
-.news-item.large {
-  width: 95%;
-  height: 100%;
-  align-content: center;
-}
-.news-item.medium {
-  width: 95%;
-  height: 100%;
-  align-content: center;
-}
-.news-item.small {
-  width: 95%;
-  height: 100%;
-  align-content: center;
-}
 </style>
