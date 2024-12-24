@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { ref, onMounted } from 'vue'
 import axios from 'axios'
-import NewsItem from './NewsCard.vue'
+import NewsItem from './NewsItem.vue'
 
 const news = ref(null)
 const newsApiKey = import.meta.env.VITE_NEWS_API_KEY
